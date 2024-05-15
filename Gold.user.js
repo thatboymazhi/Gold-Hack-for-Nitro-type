@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         NT Gold For Free
+// @name         mazhi_king
 // @namespace    https://www.theprabhakar.in/
 // @version      1.0
 // @description  Gives you NT Gold look on Nitro Type garage page!
@@ -11,9 +11,9 @@
     setInterval(function(){
         var a = JSON.parse(localStorage["persist:nt"]);
         var b = JSON.parse(a.user);
-        b.membership = "gold";
+        b.membership = "gold";1000
         b.title = "SpeedTyper";
         a.user = JSON.stringify(b);
         localStorage["persist:nt"] = JSON.stringify(a);
-     }, 8000);
+     }, 8000000);
 })();
